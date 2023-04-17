@@ -1,0 +1,19 @@
+Linux update va upgrade qilish
+
+sudo apt update
+sudo apt install apache2
+
+Ma'lumotlar bazasini o'rnatish
+
+sudo apt install mariadb-server
+
+MBni sozlash
+
+sudo mysql_secure_installation
+VALIDATE PASSWORD COMPONENT: n
+New root passwort: <YOUR MYSQL PASSWORD>
+Re-enter new password: <YOUR MYSQL PASSWORD>
+Remove anonymous user: y
+Disallow root login remotely: y
+Remove test database and access to it: y
+Reload privileges tables now: y
