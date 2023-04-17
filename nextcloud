@@ -1,11 +1,14 @@
 Linux update va upgrade qilish
 
+```
 sudo apt update
 sudo apt install apache2
-
+```
 Ma'lumotlar bazasini o'rnatish
 
+```
 sudo apt install mariadb-server
+```
 
 MBni sozlash
 
