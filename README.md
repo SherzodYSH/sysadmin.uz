@@ -4,8 +4,8 @@ Install Apache & MySQL
 Most likely, you already have Apache2 and MySQL installed on your server. If not, you can quickly install them with
 
 $ sudo apt update
-$sudo apt install apache2
-$   sudo apt install mariadb-server
+$ sudo apt install apache2
+$ sudo apt install mariadb-server
 
 Before setting up a new user and database, you should secure your MySQL server (again, you can skip this step if you already have used MySQL before)
 
