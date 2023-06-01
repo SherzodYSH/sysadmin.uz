@@ -9,7 +9,9 @@ sudo apt install mariadb-server
 ```
 Before setting up a new user and database, you should secure your MySQL server (again, you can skip this step if you already have used MySQL before)
 
+```
 sudo mysql_secure_installation
+```
 VALIDATE PASSWORD COMPONENT: n
 New root passwort: <YOUR MYSQL PASSWORD>
 Re-enter new password: <YOUR MYSQL PASSWORD>
@@ -23,15 +25,26 @@ Reload privileges tables now: y
 Prepare MySQL database
 
 In a next step, you want to create a new user and database on your MySQL server:
-
+```
 sudo mysql -u root -p
+```
 <ENTER YOUR MYSQL PASSWORD>
+```
+```
 mysql> create database nextcloud;
+```
+```
 mysql> create user 'nextcloud'@'localhost' identified by 'password';
+```
+```
 mysql> grant all privileges on nextcloud.* to 'nextcloud'@'localhost';
+```
+```
 mysql> flush privileges;
+```
+```
 mysql> quit
-
+```
 
 -----------------------------------------------
 
